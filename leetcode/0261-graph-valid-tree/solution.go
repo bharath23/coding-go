@@ -1,7 +1,7 @@
 package leetcode0261
 
 import (
-	"github.com/bharath23/leetcode-go/internal"
+	"github.com/bharath23/coding-go/internal"
 )
 
 func validTree(n int, edges [][]int) bool {

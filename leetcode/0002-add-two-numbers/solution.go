@@ -1,6 +1,6 @@
 package leetcode0002
 
-import "github.com/bharath23/leetcode-go/internal"
+import "github.com/bharath23/coding-go/internal"
 
 /*
 Iterate through the lists adding the values and carry-over as request. Once

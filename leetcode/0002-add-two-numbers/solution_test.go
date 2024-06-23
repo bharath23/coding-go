@@ -3,7 +3,7 @@ package leetcode0002
 import (
 	"testing"
 
-	"github.com/bharath23/leetcode-go/internal"
+	"github.com/bharath23/coding-go/internal"
 	"github.com/stretchr/testify/assert"
 )
 

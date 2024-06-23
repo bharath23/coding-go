@@ -1,6 +1,6 @@
 package leetcode0021
 
-import "github.com/bharath23/leetcode-go/internal"
+import "github.com/bharath23/coding-go/internal"
 
 /*
 Simple recursive solution. Time complexity is O(n) as we traverse both list

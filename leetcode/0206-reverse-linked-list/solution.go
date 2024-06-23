@@ -1,6 +1,6 @@
 package leetcode0206
 
-import "github.com/bharath23/leetcode-go/internal"
+import "github.com/bharath23/coding-go/internal"
 
 /*
 Simple one pass solution. Delete node at the head and add it to tail of the

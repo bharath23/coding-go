@@ -1,6 +1,6 @@
 package leetcode0160
 
-import "github.com/bharath23/leetcode-go/internal"
+import "github.com/bharath23/coding-go/internal"
 
 /*
 Simple two pass solution. For each node in listA compare with each node in

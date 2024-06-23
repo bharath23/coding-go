@@ -1,6 +1,6 @@
 package leetcode0203
 
-import "github.com/bharath23/leetcode-go/internal"
+import "github.com/bharath23/coding-go/internal"
 
 /*
 Simple one pass solution. Check if the value of the node matches the value

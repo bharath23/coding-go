@@ -1,6 +1,6 @@
 package leetcode0019
 
-import "github.com/bharath23/leetcode-go/internal"
+import "github.com/bharath23/coding-go/internal"
 
 /*
 Simple two pass solution. First pass count the number of nodes in the list. In

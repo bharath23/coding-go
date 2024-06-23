@@ -1,6 +1,6 @@
 package leetcode0141
 
-import "github.com/bharath23/leetcode-go/internal"
+import "github.com/bharath23/coding-go/internal"
 
 /*
 Simple one pass solution. We use hash map to store all visited nodes. We check

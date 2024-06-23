@@ -1,6 +1,6 @@
 package leetcode0430
 
-import "github.com/bharath23/leetcode-go/internal"
+import "github.com/bharath23/coding-go/internal"
 
 /*
 Preorder DFS traversal of the list. Time complexity is O(n) as we traverse

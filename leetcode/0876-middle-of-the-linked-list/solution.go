@@ -1,7 +1,7 @@
 package leetcode0876
 
 import (
-	"github.com/bharath23/leetcode-go/internal"
+	"github.com/bharath23/coding-go/internal"
 )
 
 func middleNode(head *internal.ListNode) *internal.ListNode {

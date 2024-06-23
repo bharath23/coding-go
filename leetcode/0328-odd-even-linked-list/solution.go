@@ -1,6 +1,6 @@
 package leetcode0328
 
-import "github.com/bharath23/leetcode-go/internal"
+import "github.com/bharath23/coding-go/internal"
 
 /*
 Simple one pass solution. As we traverse the list delete all even nodes and

@@ -1,7 +1,7 @@
 package leetcode0226
 
 import (
-	"github.com/bharath23/leetcode-go/internal"
+	"github.com/bharath23/coding-go/internal"
 )
 
 func invertTreeV0(root *internal.TreeNode) *internal.TreeNode {
