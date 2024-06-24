@@ -1,6 +1,6 @@
 module github.com/bharath23/coding-go
 
-go 1.17
+go 1.21
 
 require github.com/stretchr/testify v1.8.4
 
