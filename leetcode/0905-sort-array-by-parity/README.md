@@ -16,5 +16,5 @@ Return  _**any array**  that satisfies this condition_.
 </code></pre>
 
 **Constraints:**
-- `1 <= nums.length <= 5000`
-- `0 <= nums[i] <= 5000`
+* `1 <= nums.length <= 5000`
+* `0 <= nums[i] <= 5000`

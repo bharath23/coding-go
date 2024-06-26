@@ -36,8 +36,8 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 </code></pre>
 
 **Constraints:**
-- `nums1.length == m + n`
-- `nums2.length == n`
-- `0 <= m, n <= 200`
-- `1 <= m + n <= 200`
-- <code>10<sup>-9</sup><= nums1[i], nums2[j] <= 10<sup>9</sup><code>
+* `nums1.length == m + n`
+* `nums2.length == n`
+* `0 <= m, n <= 200`
+* `1 <= m + n <= 200`
+* <code>10<sup>-9</sup><= nums1[i], nums2[j] <= 10<sup>9</sup><code>

@@ -11,11 +11,10 @@ Given an array `nums` of `n` integers where `nums[i]` is in the range `[1, n]`, 
 <pre><code><b>Input</b>: nums = [1,1]
 <b>Output</b>: [2]
 </code></pre>
-code></pre>
 
 **Constraints**:
-- `n == nums.length`
-- <code>1 <= n <= 10<sup>4</sup></code>
--1 <= nums[i] <= n`
+* `n == nums.length`
+* <code>1 <= n <= 10<sup>4</sup></code>
+* `1 <= nums[i] <= n`
 
 **Follow up**: Could you do it without extra space and in `O(n)` runtime? You may assume the returned list does not count as extra space.

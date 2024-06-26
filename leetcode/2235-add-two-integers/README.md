@@ -14,4 +14,4 @@ Given two integers `num1` and `num2`, return *the _sum_ of the two integers*.
 </code></pre>
 
 **Constraints**:
-- `-100 <= num1, num2 <= 100`
+* `-100 <= num1, num2 <= 100`

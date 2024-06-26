@@ -10,6 +10,7 @@ A **clear path** in a binary matrix is a path from the **top-left** cell
 The **length of a clear path** is the number of visisted cells of this path.
 
 **Example 1**:
+
 ![](example_1.png)
 <<<<<<< Updated upstream
 <pre><code><b>Input</b>: grid = [[0, 1], [1, 0]]
@@ -21,6 +22,7 @@ The **length of a clear path** is the number of visisted cells of this path.
 </code></pre>
 
 **Example 2**:
+
 ![](example_2.png)
 <<<<<<< Updated upstream
 <pre><code><b>Input</b>: grid = [[0, 0, 0], [1, 1, 0], [1, 1, 0]]

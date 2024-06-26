@@ -26,5 +26,5 @@ If the list is empty (i.e., the given node is  `null`), you should create a new 
 </code></pre>
 
 **Constraints**:
-- The number of nodes in the list is in the range <code>[0, 5 * 10<sup>4</sup>]</code>.
-- <code>-10<sup>6</sup> <= Node.val, insertVal <= 10<sup>6</sup></code>
+* The number of nodes in the list is in the range <code>[0, 5 * 10<sup>4</sup>]</code>.
+* <code>-10<sup>6</sup> <= Node.val, insertVal <= 10<sup>6</sup></code>

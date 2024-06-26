@@ -21,5 +21,5 @@ After doing so, return the array.
 </code></pre>
 
 **Constraints:**
-- <code>1 <= arr.length <= 10<sup>4</sup></code>
-- <code>1 <= arr[i] <= 10<sup>5</sup></code>
+* <code>1 <= arr.length <= 10<sup>4</sup></code>
+* <code>1 <= arr[i] <= 10<sup>5</sup></code>

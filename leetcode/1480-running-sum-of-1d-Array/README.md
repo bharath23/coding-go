@@ -21,5 +21,5 @@ Return the running sum of nums.
  </code></pre>
 
 **Constraints**:
-- `1 <= nums.length <= 1000`
-- `-10^6 <= nums[i] <= 10^6`
+* `1 <= nums.length <= 1000`
+* `-10^6 <= nums[i] <= 10^6`

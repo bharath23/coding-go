@@ -14,7 +14,7 @@ Given a binary array `nums`, return _the maximum number of consecutive_ `1`_'s i
 </code></pre>
 
 **Constraints**:
-- <code>1 <= nums.length <= 10<sup>5</sup></code>
-- `nums[i]`  is either  `0`  or  `1`.
+* <code>1 <= nums.length <= 10<sup>5</sup></code>
+* `nums[i]`  is either  `0`  or  `1`.
 
 **Follow up**: What if the input numbers come in one by one as an infinite stream? In other words, you can't store all numbers coming from the stream as it's too large to hold in memory. Could you solve it efficiently?

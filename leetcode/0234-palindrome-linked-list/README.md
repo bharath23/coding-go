@@ -16,5 +16,5 @@ Given the head of a singly linked list, return true if it is a palindrome.
 </code></pre>
 
 **Constraints**:
-- The number of nodes in the list is in the range <code>[1, 10<sup>5</sup>]</code>.
-- `0 <= Node.val <= 9`
+* The number of nodes in the list is in the range <code>[1, 10<sup>5</sup>]</code>.
+* `0 <= Node.val <= 9`

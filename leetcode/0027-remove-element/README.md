@@ -7,7 +7,7 @@ Return  `k` _after placing the final result in the first_ `k` _slots of_ `nums`.
 
 Do  **not**  allocate extra space for another array. You must do this by  **modifying the input array  [in-place](https://en.wikipedia.org/wiki/In-place_algorithm)**  with O(1) extra memory.
 
-**Custom Judge**:
+**Custom Judge**:  
 The judge will test your solution with the following code:
 ```
 int[] nums = [...]; // Input array
@@ -41,6 +41,6 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 </code></pre>
 
 **Constraints:**
-- `0 <= nums1.length <= 100`
-- `0 <= nums[i] <= 50 `
-- `0 <= val <= 100`
+* `0 <= nums1.length <= 100`
+* `0 <= nums[i] <= 50 `
+* `0 <= val <= 100`

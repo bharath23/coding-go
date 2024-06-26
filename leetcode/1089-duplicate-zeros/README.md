@@ -17,5 +17,5 @@ Given a fixed-length integer array  `arr`, duplicate each occurrence of zero, sh
 </code></pre>
 
 **Constraints:**
-- <code>1<= arr.length <= 10<sup>4</sup><code>
-- `0 <= arr[i] <= 9`
+* <code>1<= arr.length <= 10<sup>4</sup><code>
+* `0 <= arr[i] <= 9`

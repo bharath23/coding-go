@@ -39,6 +39,6 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 </code></pre>
 
 **Constraints:**
-- <code>0 <= nums1.length <= 3 * 10<sup>4</sup></code>
-- `-100 <= nums[i] <= 100`
-- `nums` is sorted in **non-decreasing** order.
+* <code>0 <= nums1.length <= 3 * 10<sup>4</sup></code>
+* `-100 <= nums[i] <= 100`
+* `nums` is sorted in **non-decreasing** order.

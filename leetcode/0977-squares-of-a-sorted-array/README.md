@@ -15,6 +15,6 @@ After sorting, it becomes [0,1,9,16,100].
 </code></pre>
 
 **Constraints:**
-- <code>1<= nums.length <= 10<sup>4</sup><code>
--  <code>-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup><code>
-- `nums` is sorted in **non-decreasing** order.
+* <code>1<= nums.length <= 10<sup>4</sup><code>
+*  <code>-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup><code>
+* `nums` is sorted in **non-decreasing** order.

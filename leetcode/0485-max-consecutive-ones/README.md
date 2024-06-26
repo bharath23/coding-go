@@ -1,6 +1,6 @@
  #### Max Consecutive Ones
 
-Given a binary array  `nums`, return  _the maximum number of consecutive_ `1`_'s in the array_.
+Given a binary array `nums`, return _the maximum number of consecutive_ `1`_'s in the array_.
 
 **Example 1**:
 <pre><code><b>Input</b>: nums = [1,1,0,1,1,1]
@@ -14,5 +14,5 @@ Given a binary array  `nums`, return  _the maximum number of consecutive_ `1`_'s
 </code></pre>
 
 **Constraints:**
--  <code>1 <= nums.length <= 10<sup>5</sup><code>
--  `nums[i]` is either `0` or `1`.
+* <code>1 <= nums.length <= 10<sup>5</sup></code>
+* `nums[i]` is either `0` or `1`.

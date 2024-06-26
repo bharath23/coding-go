@@ -14,5 +14,5 @@ Given an integer array  `nums`, move all  `0`'s to the end of it while maintaini
 </code></pre>
 
 **Constraints:**
-- <code>1 <= nums.length <= 10<sup>4</sup></code>
-- <code>-2<sup>31</sup> <= nums[i] <= 2<sup>31</sup> - 1</code>
+* <code>1 <= nums.length <= 10<sup>4</sup></code>
+* <code>-2<sup>31</sup> <= nums[i] <= 2<sup>31</sup> - 1</code>

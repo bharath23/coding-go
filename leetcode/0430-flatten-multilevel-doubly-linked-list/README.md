@@ -32,8 +32,8 @@ After flattening the multilevel linked list it becomes:
 </code></pre>
 
 **Constraints**:
-- The number of Nodes will not exceed `1000`.
-- <code>1 <= Node.val <= 10<sup>5</sup></code>
+* The number of Nodes will not exceed `1000`.
+* <code>1 <= Node.val <= 10<sup>5</sup></code>
 
 **How the multilevel linked list is represented in test cases:**
 We use the multilevel linked list from  **Example 1**  above:

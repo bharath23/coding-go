@@ -4,6 +4,7 @@ You are given the `root` of a **binary tree** that consists of exactly `3` nodes
 Return `true` _if the value of the root is equal to the **sum** of the values of its two children_, or `false` _otherwise_.
 
 **Example 1**:
+
 ![](example_1.png)
 <pre><code><b>Input</b>: root = [10,4,6]
 <b>Output</b>: true
@@ -12,6 +13,7 @@ Return `true` _if the value of the root is equal to the **sum** of the values of
 </code></pre>
 
 **Example 2**:
+
 ![](example_2.png)
 <pre><code><b>Input</b>: root = [5,3,1]
 <b>Output</b>: false
@@ -20,5 +22,5 @@ Return `true` _if the value of the root is equal to the **sum** of the values of
 </code></pre>
 
 **Constraints**:
-- The tree consists only of the root, its left child, and its right child.
-- `-100 <= Node.val <= 100`
+* The tree consists only of the root, its left child, and its right child.
+* `-100 <= Node.val <= 100`

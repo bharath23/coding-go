@@ -19,6 +19,6 @@ Given the head of a linked list and an integer val, remove all the nodes of the 
 </code></pre>
 
 **Constraints**:
-- The number of nodes in the list is in the range  <code>[0, 10<sup>4</sup>]</code>.
-- `1 <= Node.val <= 50`
-- `0 <= val <= 50`
+* The number of nodes in the list is in the range  <code>[0, 10<sup>4</sup>]</code>.
+* `1 <= Node.val <= 50`
+* `0 <= val <= 50`

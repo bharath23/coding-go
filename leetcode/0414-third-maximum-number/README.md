@@ -30,7 +30,7 @@ The third distinct maximum is 1.
 /code></pre>
 
 **Constraints**:
-- <code>1 <= nums.length <= 10<sup>4</sup></code>
-- <code>2<sup>-31</sssup <= nums.length <= 2<sup>31</sup>- 1</code>
+* <code>1 <= nums.length <= 10<sup>4</sup></code>
+* <code>2<sup>-31</sssup <= nums.length <= 2<sup>31</sup>- 1</code>
 
 **Follow up**: Can you find an `O(n)` solution?

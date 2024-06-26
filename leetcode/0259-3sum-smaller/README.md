@@ -3,8 +3,7 @@
 Given an array of `n` integers `nums` and an integer `target`, find the number of index triplets `i`, `j`, `k` with `0 <= i < j < k < n` that satisfy the condition `nums[i] + nums[j] + nums[k] < target`.
 
 **Example 1**:
-<pre><code>
-<b>Input</b>: nums = [-2,0,1,3], target = 2
+<pre><code><b>Input</b>: nums = [-2,0,1,3], target = 2
 <b>Output</b>: 2
 <b>Explanation</b>: Because there are two triplets which are less that 2:
 [-2,0,1]
@@ -12,14 +11,12 @@ Given an array of `n` integers `nums` and an integer `target`, find the number o
 </code></pre>
 
 **Example 2**:
-<pre><code>
-<b>Input</b>: nums = [], target = 0
+<pre><code><b>Input</b>: nums = [], target = 0
 <b>Output</b>: 0
 </code></pre>
 
 **Example 3**:
-<pre><code>
-<b>Input</b>: nums = [0], target = 0
+<pre><code><b>Input</b>: nums = [0], target = 0
 <b>Output</b>: 0
 </code></pre>
 

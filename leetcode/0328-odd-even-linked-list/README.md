@@ -22,6 +22,6 @@ You must solve the problem in  `O(1)` extra space complexity and  `O(n)`  time c
 </code></pre>
 
 **Constraints**:
-- `n ==` number of nodes in the linked list
-- <code>0 <= n <= 10<sup>4</sup></code>
-- <code>-10<sup>6</sup> <= Node.val <= 10<sup>6</sup>
+* `n ==` number of nodes in the linked list
+* <code>0 <= n <= 10<sup>4</sup></code>
+* <code>-10<sup>6</sup> <= Node.val <= 10<sup>6</sup>

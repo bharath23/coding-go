@@ -34,5 +34,5 @@ All indices match.
 </code></pre>
 
 **Constraints:**
-- `1 <= heights.length <= 100`
-- `1 <= heights[i] <= 100`
+* `1 <= heights.length <= 100`
+* `1 <= heights[i] <= 100`

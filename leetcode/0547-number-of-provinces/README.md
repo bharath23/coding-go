@@ -1,5 +1,5 @@
 #### Number of Provinces
-There are`n`cities. Some of them are connected, while some are not. If city`a`is connected directly with city `b`, and city `b` is connected directly with city `c`, then city`a is connected indirectly with city `c`.
+There are `n` cities. Some of them are connected, while some are not. If city `a` is connected directly with city `b`, and city `b` is connected directly with city `c`, then city `a is connected indirectly with city c`.
 
 A **province** is a group of directly or indirectly connected cities and no other cities outside of the group.
 
@@ -22,9 +22,9 @@ Return _the total number of **provinces**_.
 </code></pre>
 
 **Constraints**:
-- `1 <= n <= 200`
-- `n == isConnected.length`
-- `n == isConnected[i].length`
-- `isConnected[i][j]`  is  `1`  or  `0`.
-- `isConnected[i][i] == 1`
-- `isConnected[i][j] == isConnected[j][i]`
+* `1 <= n <= 200`
+* `n == isConnected.length`
+* `n == isConnected[i].length`
+* `isConnected[i][j]`  is  `1`  or  `0`.
+* `isConnected[i][i] == 1`
+* `isConnected[i][j] == isConnected[j][i]`

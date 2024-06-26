@@ -5,7 +5,6 @@ Given an integer `num`, return _the number of steps to reduce it to zero_.
 In one step, if the current number is even, you have to divide it by `2`, otherwise, you have to subtract `1` from it.
 
 **Example** 1:
-
 <pre><code><b>Input</b>: num = 14
 <b>Output</b>: 6
 <b>Explanation</b>: 
@@ -18,7 +17,6 @@ Step 6) 1 is odd; subtract 1 and obtain 0.
 </code></pre>
 
 **Example** 2:
-
 <pre><code><b>Input</b>: num = 8
 <b>Output</b>: 4
 <b>Explanation</b>: 
@@ -29,11 +27,9 @@ Step 4) 1 is odd; subtract 1 and obtain 0.
 </code></pre>
 
 **Example 3**:
-
 <pre><code><b>Input</b>: num = 123
 <b>Output</b>: 12
 </code></pre>
 
 **Constraints**:
-
-- <code>0 <= num <= 10<sup>6</sup></code>
+* <code>0 <= num <= 10<sup>6</sup></code>
