@@ -1,4 +1,4 @@
-name: Leetcode-go
+name: coding-go
 on: [push]
 jobs:
 
