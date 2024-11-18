@@ -9,23 +9,23 @@ import (
 
 var tests = []struct {
 	name  string
-	nodes []int
-	want  []int
+	nodes [][]int
+	want  [][]int
 }{
 	{
 		name:  "test 1",
-		nodes: []int{4, 2, 7, 1, 3, 6, 9},
-		want:  []int{4, 7, 2, 9, 6, 3, 1},
+		nodes: [][]int{{4}, {2}, {7}, {1}, {3}, {6}, {9}},
+		want:  [][]int{{4}, {7}, {2}, {9}, {6}, {3}, {1}},
 	},
 	{
 		name:  "test 2",
-		nodes: []int{2, 1, 3},
-		want:  []int{2, 3, 1},
+		nodes: [][]int{{2}, {1}, {3}},
+		want:  [][]int{{2}, {3}, {1}},
 	},
 	{
 		name:  "test 3",
-		nodes: []int{},
-		want:  []int{},
+		nodes: [][]int{},
+		want:  [][]int{},
 	},
 }
 
