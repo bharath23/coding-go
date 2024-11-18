@@ -10,17 +10,17 @@ import (
 func TestSolution(t *testing.T) {
 	tests := []struct {
 		name  string
-		nodes []int
+		nodes [][]int
 		want  bool
 	}{
 		{
 			name:  "test 1",
-			nodes: []int{10, 4, 6},
+			nodes: [][]int{{10}, {4}, {6}},
 			want:  true,
 		},
 		{
 			name:  "test 2",
-			nodes: []int{5, 3, 1},
+			nodes: [][]int{{5}, {3}, {1}},
 			want:  false,
 		},
 	}
