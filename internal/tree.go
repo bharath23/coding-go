@@ -6,26 +6,58 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
+type queue struct {
+	elements []*TreeNode
+	size     int
+}
+
+func (q *queue) dequeue() (*TreeNode, bool) {
+	if q.size == 0 {
+		return nil, false
+	}
+
+	e := q.elements[0]
+	q.elements = q.elements[1:]
+	q.size--
+	return e, true
+}
+
+func (q *queue) enqueue(n *TreeNode) {
+	q.elements = append(q.elements, n)
+	q.size++
+}
+
+func (q *queue) isEmpty() bool {
+	return q.size == 0
+}
+
+func newQueue() *queue {
+	q := &queue{}
+	q.elements = make([]*TreeNode, 0)
+	return q
+}
+
 func NewListFromTree(root *TreeNode) [][]int {
 	if root == nil {
 		return [][]int{}
 	}
 
 	result := [][]int{}
-	q := NewQueue()
-	q.Enqueue(root)
-	for !q.IsEmpty() {
-		node := q.Dequeue().(*TreeNode)
+	q := newQueue()
+	q.enqueue(root)
+	for !q.isEmpty() {
+		node, _ := q.dequeue()
 		if node == nil {
 			continue
 		}
+
 		result = append(result, []int{node.Val})
 		if node.Left != nil {
-			q.Enqueue(node.Left)
+			q.enqueue(node.Left)
 		}
 
 		if node.Right != nil {
-			q.Enqueue(node.Right)
+			q.enqueue(node.Right)
 		}
 	}
 
@@ -37,12 +69,12 @@ func NewTreeFromList(input [][]int) *TreeNode {
 		return nil
 	}
 
-	q := NewQueue()
+	q := newQueue()
 	root := &TreeNode{Val: input[0][0]}
-	q.Enqueue(root)
+	q.enqueue(root)
 	i := 1
 	for i < len(input) {
-		cur := q.Dequeue().(*TreeNode)
+		cur, _ := q.dequeue()
 		if cur == nil {
 			continue
 		}
@@ -50,18 +82,18 @@ func NewTreeFromList(input [][]int) *TreeNode {
 		if input[i] != nil {
 			node := &TreeNode{Val: input[i][0]}
 			cur.Left = node
-			q.Enqueue(node)
+			q.enqueue(node)
 		} else {
-			q.Enqueue(nil)
+			q.enqueue(nil)
 		}
 
 		i = i + 1
 		if i < len(input) && input[i] != nil {
 			node := &TreeNode{Val: input[i][0]}
 			cur.Right = node
-			q.Enqueue(node)
+			q.enqueue(node)
 		} else {
-			q.Enqueue(nil)
+			q.enqueue(nil)
 		}
 
 		i = i + 1

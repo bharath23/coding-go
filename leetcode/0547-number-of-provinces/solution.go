@@ -1,8 +1,6 @@
 package leetcode0547
 
-import (
-	"github.com/bharath23/coding-go/internal"
-)
+import "github.com/bharath23/coding-go/internal"
 
 /*
 A simple DFS solution. We visit each node and traverse its children if we
@@ -57,7 +55,7 @@ func findCircleNumV1(isConnected [][]int) int {
 		if !visited[i] {
 			queue.Enqueue(i)
 			for !queue.IsEmpty() {
-				n := queue.Dequeue().(int)
+				n, _ := queue.Dequeue()
 				visited[n] = true
 				for j := 0; j < len(isConnected[n]); j++ {
 					if isConnected[n][j] == 1 && !visited[j] {
