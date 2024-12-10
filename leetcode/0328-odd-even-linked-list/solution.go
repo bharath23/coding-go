@@ -1,6 +1,9 @@
 package leetcode0328
 
-import "github.com/bharath23/coding-go/internal"
+import (
+	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
+)
 
 /*
 Simple one pass solution. As we traverse the list delete all even nodes and
@@ -12,8 +15,10 @@ Complexity:
 Time complexity; O(n) each node needs to be traversed just once
 Space complexity: O(1) no addiional storage is required
 */
-func oddEvenListV0(head *internal.ListNode) *internal.ListNode {
-	var prev, headEven, tailEven *internal.ListNode
+func oddEvenListV0[T constraints.Integer](
+	head *internal.ListNode[T],
+) *internal.ListNode[T] {
+	var prev, headEven, tailEven *internal.ListNode[T]
 	i := 1
 	cur := head
 	for cur != nil {
@@ -66,7 +71,9 @@ Complexity:
 Time complexity: O(n), list traversed once.
 Space complexity: O(1), no additional storage required
 */
-func oddEvenListV1(head *internal.ListNode) *internal.ListNode {
+func oddEvenListV1[T constraints.Integer](
+	head *internal.ListNode[T],
+) *internal.ListNode[T] {
 	if head == nil {
 		return nil
 	}

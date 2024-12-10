@@ -1,6 +1,9 @@
 package leetcode0206
 
-import "github.com/bharath23/coding-go/internal"
+import (
+	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
+)
 
 /*
 Simple one pass solution. Delete node at the head and add it to tail of the
@@ -11,7 +14,9 @@ Complexity:
 Time complexity: O(n), traverse the list once
 Space complexity: O(1), no additional space required
 */
-func reverseListV0(head *internal.ListNode) *internal.ListNode {
+func reverseListV0[T constraints.Integer](
+	head *internal.ListNode[T],
+) *internal.ListNode[T] {
 	cur := head
 	head = nil
 	for cur != nil {
@@ -34,9 +39,11 @@ Complexity:
 Time complexity: O(n), traverse the list once
 Space complexity: O(1), no additional space required
 */
-func reverseListV1(head *internal.ListNode) *internal.ListNode {
-	var reverse func(*internal.ListNode) *internal.ListNode
-	reverse = func(cur *internal.ListNode) *internal.ListNode {
+func reverseListV1[T constraints.Integer](
+	head *internal.ListNode[T],
+) *internal.ListNode[T] {
+	var reverse func(*internal.ListNode[T]) *internal.ListNode[T]
+	reverse = func(cur *internal.ListNode[T]) *internal.ListNode[T] {
 		if cur == nil {
 			return nil
 		}

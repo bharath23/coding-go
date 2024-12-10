@@ -2,6 +2,7 @@ package leetcode0708
 
 import (
 	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
 )
 
 /*
@@ -14,8 +15,11 @@ Time complexity: O(n)
 Space complexity: O(1)
 */
 
-func insert(aNode *internal.ListNode, x int) *internal.ListNode {
-	n := &internal.ListNode{Val: x}
+func insert[T constraints.Integer](
+	aNode *internal.ListNode[T],
+	x T,
+) *internal.ListNode[T] {
+	n := &internal.ListNode[T]{Val: x}
 	if aNode == nil {
 		n.Next = n
 		return n

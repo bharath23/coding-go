@@ -2,10 +2,14 @@ package educative0014
 
 import (
 	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
 )
 
-func reverseKGroups(head *internal.ListNode, k int) *internal.ListNode {
-	var prev *internal.ListNode
+func reverseKGroups[T constraints.Integer](
+	head *internal.ListNode[T],
+	k int,
+) *internal.ListNode[T] {
+	var prev *internal.ListNode[T]
 	for cur := head; cur != nil; {
 		kStart := cur
 		kEnd := cur
@@ -21,7 +25,7 @@ func reverseKGroups(head *internal.ListNode, k int) *internal.ListNode {
 		}
 
 		kEnd.Next = nil
-		var kPrev *internal.ListNode
+		var kPrev *internal.ListNode[T]
 		for kCur := kStart; kCur != nil; {
 			tmp := kCur
 			kCur = kCur.Next
