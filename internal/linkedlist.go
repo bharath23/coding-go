@@ -1,14 +1,16 @@
 package internal
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
+import "golang.org/x/exp/constraints"
+
+type ListNode[T constraints.Integer] struct {
+	Val  T
+	Next *ListNode[T]
 }
 
-func NewCircularListFromSlice(input []int) *ListNode {
-	var head, tail *ListNode
+func NewCircularListFromSlice[T constraints.Integer](input []T) *ListNode[T] {
+	var head, tail *ListNode[T]
 	for _, v := range input {
-		n := &ListNode{Val: v}
+		n := &ListNode[T]{Val: v}
 		if head == nil {
 			head = n
 		}
@@ -25,10 +27,10 @@ func NewCircularListFromSlice(input []int) *ListNode {
 	return head
 }
 
-func NewListFromSlice(input []int) *ListNode {
-	var head, tail *ListNode
+func NewListFromSlice[T constraints.Integer](input []T) *ListNode[T] {
+	var head, tail *ListNode[T]
 	for _, v := range input {
-		n := &ListNode{Val: v}
+		n := &ListNode[T]{Val: v}
 		if head == nil {
 			head = n
 		}
@@ -43,10 +45,13 @@ func NewListFromSlice(input []int) *ListNode {
 	return head
 }
 
-func NewListFromSliceWithCycle(input []int, pos int) (*ListNode, *ListNode) {
-	var cycle, head, tail *ListNode
+func NewListFromSliceWithCycle[T constraints.Integer](input []T, pos int) (
+	*ListNode[T],
+	*ListNode[T],
+) {
+	var cycle, head, tail *ListNode[T]
 	for i, v := range input {
-		n := &ListNode{Val: v}
+		n := &ListNode[T]{Val: v}
 		if head == nil {
 			head = n
 		}
@@ -68,10 +73,17 @@ func NewListFromSliceWithCycle(input []int, pos int) (*ListNode, *ListNode) {
 	return head, cycle
 }
 
-func NewListsWithIntersection(val, skipA, skipB int, inputA, inputB []int) (*ListNode, *ListNode, *ListNode) {
-	var headA, tailA, headB, tailB, intersect *ListNode
+func NewListsWithIntersection[T constraints.Integer](
+	val T,
+	skipA, skipB int,
+	inputA, inputB []T,
+) (
+	*ListNode[T],
+	*ListNode[T],
+	*ListNode[T]) {
+	var headA, tailA, headB, tailB, intersect *ListNode[T]
 	for i, v := range inputA {
-		n := &ListNode{Val: v}
+		n := &ListNode[T]{Val: v}
 		if headA == nil {
 			headA = n
 		}
@@ -99,7 +111,7 @@ func NewListsWithIntersection(val, skipA, skipB int, inputA, inputB []int) (*Lis
 			tailB = tailA
 		}
 
-		n := &ListNode{Val: v}
+		n := &ListNode[T]{Val: v}
 		if headB == nil {
 			headB = n
 		}
@@ -113,8 +125,8 @@ func NewListsWithIntersection(val, skipA, skipB int, inputA, inputB []int) (*Lis
 	return headA, headB, intersect
 }
 
-func ListToSlice(head *ListNode) []int {
-	s := []int{}
+func ListToSlice[T constraints.Integer](head *ListNode[T]) []T {
+	s := []T{}
 	for cur := head; cur != nil; cur = cur.Next {
 		s = append(s, cur.Val)
 	}
@@ -122,8 +134,8 @@ func ListToSlice(head *ListNode) []int {
 	return s
 }
 
-func CircularListToSlice(head *ListNode) []int {
-	s := []int{}
+func CircularListToSlice[T constraints.Integer](head *ListNode[T]) []T {
+	s := []T{}
 	cur := head
 	if cur != nil {
 		s = append(s, cur.Val)

@@ -2,6 +2,7 @@ package leetcode0234
 
 import (
 	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
 )
 
 /*
@@ -17,13 +18,15 @@ Time complexity: O(n)
 Space complexity: O(n)
 */
 
-func isPalindromeV0(head *internal.ListNode) bool {
-	vals := []int{}
+func isPalindromeV0[T constraints.Integer](
+	head *internal.ListNode[T],
+) bool {
+	vals := []T{}
 	for cur := head; cur != nil; cur = cur.Next {
 		vals = append(vals, cur.Val)
 	}
 
-	reverseVals := []int{}
+	reverseVals := []T{}
 	for i := len(vals) - 1; i >= 0; i-- {
 		reverseVals = append(reverseVals, vals[i])
 	}
@@ -47,10 +50,12 @@ Time complexity: O(n)
 Space complexity: O(1)
 */
 
-func isPalindromeV1(head *internal.ListNode) bool {
-	var cur *internal.ListNode
-	var recursiveCheck func(*internal.ListNode) bool
-	recursiveCheck = func(node *internal.ListNode) bool {
+func isPalindromeV1[T constraints.Integer](
+	head *internal.ListNode[T],
+) bool {
+	var cur *internal.ListNode[T]
+	var recursiveCheck func(*internal.ListNode[T]) bool
+	recursiveCheck = func(node *internal.ListNode[T]) bool {
 		if node != nil {
 			if !recursiveCheck(node.Next) {
 				return false
@@ -79,8 +84,12 @@ Complexity:
 Time complexity: O(n)
 Space complexity: O(1)
 */
-func isPalindromeV2(head *internal.ListNode) bool {
-	findFirstHalfEnd := func(head *internal.ListNode) *internal.ListNode {
+func isPalindromeV2[T constraints.Integer](
+	head *internal.ListNode[T],
+) bool {
+	findFirstHalfEnd := func(
+		head *internal.ListNode[T],
+	) *internal.ListNode[T] {
 		fast := head
 		slow := head
 		for fast.Next != nil && fast.Next.Next != nil {
@@ -91,8 +100,10 @@ func isPalindromeV2(head *internal.ListNode) bool {
 		return slow
 	}
 
-	reverseList := func(head *internal.ListNode) *internal.ListNode {
-		var prev *internal.ListNode
+	reverseList := func(
+		head *internal.ListNode[T],
+	) *internal.ListNode[T] {
+		var prev *internal.ListNode[T]
 		cur := head
 		for cur != nil {
 			tmp := cur.Next

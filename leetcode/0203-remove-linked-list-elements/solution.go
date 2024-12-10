@@ -1,6 +1,9 @@
 package leetcode0203
 
-import "github.com/bharath23/coding-go/internal"
+import (
+	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
+)
 
 /*
 Simple one pass solution. Check if the value of the node matches the value
@@ -12,8 +15,11 @@ Complexity:
 Time complexity: O(n)
 Space complexity: O(1)
 */
-func removeElements(head *internal.ListNode, val int) *internal.ListNode {
-	var prev *internal.ListNode
+func removeElements[T constraints.Integer](
+	head *internal.ListNode[T],
+	val T,
+) *internal.ListNode[T] {
+	var prev *internal.ListNode[T]
 	cur := head
 	for cur != nil {
 		if cur.Val == val {

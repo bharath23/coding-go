@@ -1,6 +1,9 @@
 package leetcode0021
 
-import "github.com/bharath23/coding-go/internal"
+import (
+	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
+)
 
 /*
 Simple recursive solution. Time complexity is O(n) as we traverse both list
@@ -10,9 +13,17 @@ Complexity:
 Time complexity: O(n)
 Space complexity: O(1)
 */
-func mergeTwoListsV0(list1 *internal.ListNode, list2 *internal.ListNode) *internal.ListNode {
-	var recursiveMergeLists func(*internal.ListNode, *internal.ListNode) *internal.ListNode
-	recursiveMergeLists = func(l1, l2 *internal.ListNode) *internal.ListNode {
+func mergeTwoListsV0[T constraints.Integer](
+	list1 *internal.ListNode[T],
+	list2 *internal.ListNode[T],
+) *internal.ListNode[T] {
+	var recursiveMergeLists func(
+		*internal.ListNode[T],
+		*internal.ListNode[T],
+	) *internal.ListNode[T]
+	recursiveMergeLists = func(
+		l1, l2 *internal.ListNode[T],
+	) *internal.ListNode[T] {
 		if l1 == nil {
 			return l2
 		}
@@ -42,8 +53,11 @@ Complexity:
 Time complexity: O(n)
 Space complexity: O(1)
 */
-func mergeTwoListsV1(list1 *internal.ListNode, list2 *internal.ListNode) *internal.ListNode {
-	var head, prev *internal.ListNode
+func mergeTwoListsV1[T constraints.Integer](
+	list1 *internal.ListNode[T],
+	list2 *internal.ListNode[T],
+) *internal.ListNode[T] {
+	var head, prev *internal.ListNode[T]
 	for list1 != nil && list2 != nil {
 		if list1.Val <= list2.Val {
 			if prev != nil {

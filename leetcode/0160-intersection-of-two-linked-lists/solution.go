@@ -1,6 +1,9 @@
 package leetcode0160
 
-import "github.com/bharath23/coding-go/internal"
+import (
+	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
+)
 
 /*
 Simple two pass solution. For each node in listA compare with each node in
@@ -13,7 +16,9 @@ Time complexity: O(n^2)
 Space complexity: O(1)
 */
 
-func getIntersectionNodeV0(headA, headB *internal.ListNode) *internal.ListNode {
+func getIntersectionNodeV0[T constraints.Integer](
+	headA, headB *internal.ListNode[T],
+) *internal.ListNode[T] {
 	curA := headA
 	for curA != nil {
 		curB := headB
@@ -40,8 +45,10 @@ Time complexity: O(n)
 Space complexity: O(n)
 */
 
-func getIntersectionNodeV1(headA, headB *internal.ListNode) *internal.ListNode {
-	visited := map[*internal.ListNode]bool{}
+func getIntersectionNodeV1[T constraints.Integer](
+	headA, headB *internal.ListNode[T],
+) *internal.ListNode[T] {
+	visited := map[*internal.ListNode[T]]bool{}
 	curA := headA
 	for curA != nil {
 		visited[curA] = true
@@ -72,7 +79,9 @@ Time complexity: O(n)
 Space complexity: O(1)
 */
 
-func getIntersectionNodeV2(headA, headB *internal.ListNode) *internal.ListNode {
+func getIntersectionNodeV2[T constraints.Integer](
+	headA, headB *internal.ListNode[T],
+) *internal.ListNode[T] {
 	ptrA := headA
 	ptrB := headB
 	for ptrA != ptrB {

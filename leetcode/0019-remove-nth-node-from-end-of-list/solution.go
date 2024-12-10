@@ -1,6 +1,9 @@
 package leetcode0019
 
-import "github.com/bharath23/coding-go/internal"
+import (
+	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
+)
 
 /*
 Simple two pass solution. First pass count the number of nodes in the list. In
@@ -12,7 +15,10 @@ Time complexity: O(n)
 Space complexity: O(1)
 */
 
-func removeNthFromEndV0(head *internal.ListNode, n int) *internal.ListNode {
+func removeNthFromEndV0[T constraints.Integer](
+	head *internal.ListNode[T],
+	n int,
+) *internal.ListNode[T] {
 	listLen := 0
 	cur := head
 	for cur != nil {
@@ -20,7 +26,7 @@ func removeNthFromEndV0(head *internal.ListNode, n int) *internal.ListNode {
 		cur = cur.Next
 	}
 
-	var prev *internal.ListNode
+	var prev *internal.ListNode[T]
 	count := 0
 	if head != nil {
 		count++
@@ -56,13 +62,16 @@ Time complexity: O(n)
 Space complexity: O(1)
 */
 
-func removeNthFromEndV1(head *internal.ListNode, n int) *internal.ListNode {
+func removeNthFromEndV1[T constraints.Integer](
+	head *internal.ListNode[T],
+	n int,
+) *internal.ListNode[T] {
 	p1 := head
 	for i := 0; i < n; i++ {
 		p1 = p1.Next
 	}
 
-	var p2 *internal.ListNode
+	var p2 *internal.ListNode[T]
 	for p1 != nil {
 		p1 = p1.Next
 		if p2 != nil {

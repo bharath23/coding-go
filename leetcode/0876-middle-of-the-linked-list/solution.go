@@ -2,9 +2,12 @@ package leetcode0876
 
 import (
 	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
 )
 
-func middleNode(head *internal.ListNode) *internal.ListNode {
+func middleNode[T constraints.Integer](
+	head *internal.ListNode[T],
+) *internal.ListNode[T] {
 	cur := head
 	mid := head
 

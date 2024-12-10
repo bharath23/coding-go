@@ -1,8 +1,13 @@
 module github.com/bharath23/coding-go
 
-go 1.22
+go 1.22.0
 
-require github.com/stretchr/testify v1.8.4
+toolchain go1.23.4
+
+require (
+	github.com/stretchr/testify v1.8.4
+	golang.org/x/exp v0.0.0-20241204233417-43b7b7cde48d
+)
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
