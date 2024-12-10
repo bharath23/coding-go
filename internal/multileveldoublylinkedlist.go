@@ -1,22 +1,26 @@
 package internal
 
-type Node struct {
-	Val   int
-	Child *Node
-	Next  *Node
-	Prev  *Node
+import "golang.org/x/exp/constraints"
+
+type Node[T constraints.Signed] struct {
+	Val   T
+	Child *Node[T]
+	Next  *Node[T]
+	Prev  *Node[T]
 }
 
-func NewMultiLevelDoublyLinkedList(input []int) *Node {
-	newDoublyLinkedList := func(input []int, start, end int) (*Node, int) {
-		var head, tail *Node
+func NewMultiLevelDoublyLinkedList[T constraints.Signed](
+	input []T,
+) *Node[T] {
+	newDoublyLinkedList := func(input []T, start, end int) (*Node[T], int) {
+		var head, tail *Node[T]
 		i := start
 		for i < end {
 			if input[i] == -1 {
 				i++
 				break
 			}
-			n := &Node{Val: input[i]}
+			n := &Node[T]{Val: input[i]}
 			if head == nil {
 				head = n
 			}
@@ -33,7 +37,7 @@ func NewMultiLevelDoublyLinkedList(input []int) *Node {
 		return head, i
 	}
 
-	var head, cur *Node
+	var head, cur *Node[T]
 	end := len(input)
 	i := 0
 	for i < end {
@@ -41,7 +45,7 @@ func NewMultiLevelDoublyLinkedList(input []int) *Node {
 			cur = cur.Next
 			i++
 		} else {
-			var node *Node
+			var node *Node[T]
 			node, i = newDoublyLinkedList(input, i, end)
 			if head == nil {
 				head = node
@@ -57,8 +61,10 @@ func NewMultiLevelDoublyLinkedList(input []int) *Node {
 	return head
 }
 
-func MultiLevelDoublyLinkedListToSlice(head *Node) []int {
-	s := []int{}
+func MultiLevelDoublyLinkedListToSlice[T constraints.Signed](
+	head *Node[T],
+) []T {
+	s := []T{}
 	for cur := head; cur != nil; cur = cur.Next {
 		s = append(s, cur.Val)
 	}
