@@ -2,6 +2,7 @@ package leetcode0061
 
 import (
 	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
 )
 
 /*
@@ -13,7 +14,10 @@ Complexity:
 Time complexity: O(n)
 Space complexity: O(1)
 */
-func rotateRight(head *internal.ListNode, k int) *internal.ListNode {
+func rotateRight[T constraints.Integer](
+	head *internal.ListNode[T],
+	k int,
+) *internal.ListNode[T] {
 	if head == nil {
 		return nil
 	}
