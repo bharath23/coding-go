@@ -1,6 +1,9 @@
 package leetcode0141
 
-import "github.com/bharath23/coding-go/internal"
+import (
+	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
+)
 
 /*
 Simple one pass solution. We use hash map to store all visited nodes. We check
@@ -13,8 +16,10 @@ Time complexity: O(n)
 Space complexity: O(n)
 */
 
-func detectCycleV0(head *internal.ListNode) *internal.ListNode {
-	visited := map[*internal.ListNode]bool{}
+func detectCycleV0[T constraints.Integer](
+	head *internal.ListNode[T],
+) *internal.ListNode[T] {
+	visited := map[*internal.ListNode[T]]bool{}
 	cur := head
 	for cur != nil {
 		isVisited := visited[cur]
@@ -44,12 +49,14 @@ Time complexity: O(n)
 Space complexity: O(1)
 */
 
-func detectCycleV1(head *internal.ListNode) *internal.ListNode {
+func detectCycleV1[T constraints.Integer](
+	head *internal.ListNode[T],
+) *internal.ListNode[T] {
 	if head == nil {
 		return nil
 	}
 
-	getInersection := func() *internal.ListNode {
+	getInersection := func() *internal.ListNode[T] {
 		p1 := head
 		p2 := head
 		for (p2 != nil) && (p2.Next != nil) {

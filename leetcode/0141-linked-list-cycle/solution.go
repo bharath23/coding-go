@@ -1,6 +1,9 @@
 package leetcode0141
 
-import "github.com/bharath23/coding-go/internal"
+import (
+	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
+)
 
 /*
 Simple one pass solution. We use hash map to store all visited nodes. We check
@@ -13,8 +16,8 @@ Time complexity: O(n)
 Space complexity: O(n)
 */
 
-func hasCycleV0(head *internal.ListNode) bool {
-	visited := map[*internal.ListNode]bool{}
+func hasCycleV0[T constraints.Integer](head *internal.ListNode[T]) bool {
+	visited := map[*internal.ListNode[T]]bool{}
 	cur := head
 	for cur != nil {
 		isVisited := visited[cur]
@@ -42,8 +45,8 @@ Time complexity: O(n)
 Space complexity: O(1)
 */
 
-func hasCycleV1(head *internal.ListNode) bool {
-	var p1, p2 *internal.ListNode
+func hasCycleV1[T constraints.Integer](head *internal.ListNode[T]) bool {
+	var p1, p2 *internal.ListNode[T]
 	if head == nil {
 		return false
 	}
