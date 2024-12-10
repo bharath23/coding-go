@@ -1,6 +1,9 @@
 package leetcode0430
 
-import "github.com/bharath23/coding-go/internal"
+import (
+	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
+)
 
 /*
 Preorder DFS traversal of the list. Time complexity is O(n) as we traverse
@@ -12,9 +15,14 @@ Time complexity: O(n)
 Space complexity: O(1)
 */
 
-func flattenV0(root *internal.Node) *internal.Node {
-	var recursiveFlatten func(*internal.Node, *internal.Node) *internal.Node
-	recursiveFlatten = func(prev, cur *internal.Node) *internal.Node {
+func flattenV0[T constraints.Signed](
+	root *internal.Node[T],
+) *internal.Node[T] {
+	var recursiveFlatten func(
+		*internal.Node[T],
+		*internal.Node[T],
+	) *internal.Node[T]
+	recursiveFlatten = func(prev, cur *internal.Node[T]) *internal.Node[T] {
 		if cur == nil {
 			return prev
 		}
@@ -44,17 +52,19 @@ Time complexity: O(n)
 Space complexity: O(n)
 */
 
-func flattenV1(root *internal.Node) *internal.Node {
+func flattenV1[T constraints.Signed](
+	root *internal.Node[T],
+) *internal.Node[T] {
 	stack := internal.NewStack()
 	if root == nil {
 		return nil
 	}
 
-	var prev *internal.Node
+	var prev *internal.Node[T]
 	stack.Push(root)
 	newRoot := root
 	for !stack.IsEmpty() {
-		cur := stack.Pop().(*internal.Node)
+		cur := stack.Pop().(*internal.Node[T])
 		if cur.Next != nil {
 			stack.Push(cur.Next)
 			cur.Next = nil
