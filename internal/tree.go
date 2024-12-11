@@ -1,17 +1,19 @@
 package internal
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
+import "golang.org/x/exp/constraints"
+
+type TreeNode[T constraints.Ordered] struct {
+	Val   T
+	Left  *TreeNode[T]
+	Right *TreeNode[T]
 }
 
-type queue struct {
-	elements []*TreeNode
+type queue[T constraints.Ordered] struct {
+	elements []*TreeNode[T]
 	size     int
 }
 
-func (q *queue) dequeue() (*TreeNode, bool) {
+func (q *queue[T]) dequeue() (*TreeNode[T], bool) {
 	if q.size == 0 {
 		return nil, false
 	}
@@ -22,28 +24,28 @@ func (q *queue) dequeue() (*TreeNode, bool) {
 	return e, true
 }
 
-func (q *queue) enqueue(n *TreeNode) {
+func (q *queue[T]) enqueue(n *TreeNode[T]) {
 	q.elements = append(q.elements, n)
 	q.size++
 }
 
-func (q *queue) isEmpty() bool {
+func (q *queue[T]) isEmpty() bool {
 	return q.size == 0
 }
 
-func newQueue() *queue {
-	q := &queue{}
-	q.elements = make([]*TreeNode, 0)
+func newQueue[T constraints.Ordered]() *queue[T] {
+	q := &queue[T]{}
+	q.elements = make([]*TreeNode[T], 0)
 	return q
 }
 
-func NewListFromTree(root *TreeNode) [][]int {
+func NewListFromTree[T constraints.Ordered](root *TreeNode[T]) [][]T {
 	if root == nil {
-		return [][]int{}
+		return [][]T{}
 	}
 
-	result := [][]int{}
-	q := newQueue()
+	result := [][]T{}
+	q := newQueue[T]()
 	q.enqueue(root)
 	for !q.isEmpty() {
 		node, _ := q.dequeue()
@@ -51,7 +53,7 @@ func NewListFromTree(root *TreeNode) [][]int {
 			continue
 		}
 
-		result = append(result, []int{node.Val})
+		result = append(result, []T{node.Val})
 		if node.Left != nil {
 			q.enqueue(node.Left)
 		}
@@ -64,13 +66,13 @@ func NewListFromTree(root *TreeNode) [][]int {
 	return result
 }
 
-func NewTreeFromList(input [][]int) *TreeNode {
+func NewTreeFromList[T constraints.Ordered](input [][]T) *TreeNode[T] {
 	if len(input) == 0 {
 		return nil
 	}
 
-	q := newQueue()
-	root := &TreeNode{Val: input[0][0]}
+	q := newQueue[T]()
+	root := &TreeNode[T]{Val: input[0][0]}
 	q.enqueue(root)
 	i := 1
 	for i < len(input) {
@@ -80,7 +82,7 @@ func NewTreeFromList(input [][]int) *TreeNode {
 		}
 
 		if input[i] != nil {
-			node := &TreeNode{Val: input[i][0]}
+			node := &TreeNode[T]{Val: input[i][0]}
 			cur.Left = node
 			q.enqueue(node)
 		} else {
@@ -89,7 +91,7 @@ func NewTreeFromList(input [][]int) *TreeNode {
 
 		i = i + 1
 		if i < len(input) && input[i] != nil {
-			node := &TreeNode{Val: input[i][0]}
+			node := &TreeNode[T]{Val: input[i][0]}
 			cur.Right = node
 			q.enqueue(node)
 		} else {
