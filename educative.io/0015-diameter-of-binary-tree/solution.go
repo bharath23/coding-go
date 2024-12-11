@@ -2,12 +2,15 @@ package educative0015
 
 import (
 	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
 )
 
-func diameterOfBinaryTree(root *internal.TreeNode) int {
+func diameterOfBinaryTree[T constraints.Ordered](
+	root *internal.TreeNode[T],
+) int {
 	maxDiameter := 0
-	var findMaxDiameter func(*internal.TreeNode) int
-	findMaxDiameter = func(node *internal.TreeNode) int {
+	var findMaxDiameter func(*internal.TreeNode[T]) int
+	findMaxDiameter = func(node *internal.TreeNode[T]) int {
 		if node == nil {
 			return 0
 		}

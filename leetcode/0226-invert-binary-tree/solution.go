@@ -2,9 +2,10 @@ package leetcode0226
 
 import (
 	"github.com/bharath23/coding-go/internal"
+	"golang.org/x/exp/constraints"
 )
 
-func invertTreeV0(root *internal.TreeNode) *internal.TreeNode {
+func invertTreeV0[T constraints.Ordered](root *internal.TreeNode[T]) *internal.TreeNode[T] {
 	if root != nil {
 		root.Left, root.Right = invertTreeV0(root.Right), invertTreeV0(root.Left)
 	}
@@ -12,13 +13,13 @@ func invertTreeV0(root *internal.TreeNode) *internal.TreeNode {
 	return root
 }
 
-func invertTreeV1(root *internal.TreeNode) *internal.TreeNode {
+func invertTreeV1[T constraints.Ordered](root *internal.TreeNode[T]) *internal.TreeNode[T] {
 	if root == nil {
 		return nil
 	}
 
-	var result *internal.TreeNode
-	q := []*internal.TreeNode{}
+	var result *internal.TreeNode[T]
+	q := []*internal.TreeNode[T]{}
 	q = append(q, root)
 	for len(q) != 0 {
 		node := q[0]
