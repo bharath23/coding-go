@@ -50,11 +50,12 @@ func NewListFromTree[T constraints.Ordered](root *TreeNode[T]) [][]T {
 	for !q.isEmpty() {
 		node, _ := q.dequeue()
 		if node == nil {
+			result = append(result, nil)
 			continue
 		}
 
 		result = append(result, []T{node.Val})
-		if node.Left != nil {
+		if node.Left != nil || node.Right != nil {
 			q.enqueue(node.Left)
 		}
 
