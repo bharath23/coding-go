@@ -4,19 +4,19 @@ Given two strings `ransomNote` and `magazine`, return `true` if `ransomNote` can
 Each letter in `magazine` can only be used once in `ransomNote`.
 
 **Example 1**:
-<pre><code><b>Input</b>: ransomNote = "a", magazine = "b"
+<pre><b>Input</b>: ransomNote = "a", magazine = "b"
 <b>Output</b>: false
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: ransomNote = "aa", magazine = "ab"
+<pre><b>Input</b>: ransomNote = "aa", magazine = "ab"
 <b>Output</b>: false
-</code></pre>
+</pre>
 
 **Example 3**:
-<pre><code><b>Input</b>: ransomNote = "aa", magazine = "aab"
+<pre><b>Input</b>: ransomNote = "aa", magazine = "aab"
 <b>Output</b>: true
-</code></pre>
+</pre>
 
 **Constraints**:
 * <code>1 <= ransomNote.length, magazine.length <= 10<sup>5</sup></code>

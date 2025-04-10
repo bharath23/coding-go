@@ -5,15 +5,15 @@ You can either start from the step with index `0`, or the step with index `1`.
 Return _the minimum cost to reach the top of the floor_.
 
 **Example 1**:
-<pre><code><b>Input</b>: cost = [10, <u>15</u>, 20]
+<pre><b>Input</b>: cost = [10, <u>15</u>, 20]
 <b>Output</b>: 15
 <b>Explanation</b>: You will start at index 1.
 — Pay 15 and climb two steps to reach the top.
 Total cost is 15.
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: cost = [<u>1</u>, 100, <u>1</u>, 1, <u>1</u>, 100, <u>1</u>, <u>1</u>, 100, <u>1</u>]
+<pre><b>Input</b>: cost = [<u>1</u>, 100, <u>1</u>, 1, <u>1</u>, 100, <u>1</u>, <u>1</u>, 100, <u>1</u>]
 <b>Output</b>: 6
 <b>Explanation</b>: You will start at index 0.
 — Pay 1 and climb two steps to reach index 2.
@@ -23,7 +23,7 @@ Total cost is 15.
 — Pay 1 and climb two steps to reach index 9.
 — Pay 1 and climb one step to reach the top.
 Total cost is 6.
-</code></pre>
+</pre>
 
 **Constraints**:
 * `2 <= cost.length <= 1000`

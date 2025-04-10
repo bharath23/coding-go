@@ -10,23 +10,23 @@ number 0 itself.
 **Example 1**:
 
 ![](example_1.jpg)
-<pre><code>
+<pre>
 <b>Input</b>: l1 = [2,4,3], l2 = [5,6,4]
 <b>Output</b>: [7,0,8]
 <b>Explanation</b>: 342 + 465 = 807.
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code>
+<pre>
 <b>Input</b>: l1 = [0], l2 = [0]
 <b>Output</b>: [0]
-</code></pre>
+</pre>
 
 **Example 3**:
-<pre><code>
+<pre>
 <b>Input</b>: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
 <b>Output</b>: [8,9,9,9,0,0,0,1]
-</code></pre>
+</pre>
 
 **Constraints**:
 * The number of nodes in each linked list is in the range `[1, 100]`.

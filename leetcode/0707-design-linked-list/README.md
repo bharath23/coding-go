@@ -12,7 +12,7 @@ Implement the  `MyLinkedList`  class:
 * `void deleteAtIndex(int index)`  Delete the  `indexth`  node in the linked list, if the index is valid.
 
 **Example 1**:
-<pre><code><b>Input</b>
+<pre><b>Input</b>
 ["MyLinkedList", "addAtHead", "addAtTail", "addAtIndex", "get", "deleteAtIndex", "get"]
 [[], [1], [3], [1, 2], [1], [1], [1]]
 <b>Output</b>
@@ -26,7 +26,7 @@ myLinkedList.addAtIndex(1, 2);    // linked list becomes 1->2->3
 myLinkedList.get(1);              // return 2
 myLinkedList.deleteAtIndex(1);    // now the linked list is 1->3
 myLinkedList.get(1);              // return 3
-</code></pre>
+</pre>
 
 **Constraints**:
 * `0 <= index, val <= 1000`

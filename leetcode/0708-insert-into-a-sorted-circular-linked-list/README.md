@@ -8,22 +8,22 @@ If the list is empty (i.e., the given node is  `null`), you should create a new 
 **Example 1**:
 
 ![](example_1.jpg)
-<pre><code><b>Input</b>: head = [3,4,1], insertVal = 2
+<pre><b>Input</b>: head = [3,4,1], insertVal = 2
 <b>Output</b>: [3,4,1,2]
 <b>Explanation</b>: In the figure above, there is a sorted circular list of three elements. You are given a reference to the node with value 3, and we need to insert 2 into the list. The new node should be inserted between node 1 and node 3. After the insertion, the list should look like this, and we should still return node 3.
-</code>
+
 <img src="example_1_after.jpg" /></pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: head = [], insertVal = 1
+<pre><b>Input</b>: head = [], insertVal = 1
 <b>Output</b>: [1]
 <b>Explanation</b>: The list is empty (given head is null). We create a new single circular list and return the reference to that single node.
-</code></pre>
+</pre>
 
 **Example 3**:
-<pre><code><b>Input</b>: head = [1], insertVal = 0
+<pre><b>Input</b>: head = [1], insertVal = 0
 <b>Output</b>: [1,0]
-</code></pre>
+</pre>
 
 **Constraints**:
 * The number of nodes in the list is in the range <code>[0, 5 * 10<sup>4</sup>]</code>.

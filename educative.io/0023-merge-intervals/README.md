@@ -11,6 +11,6 @@ output array consisting of only the non-overlapping intervals.
 
 **Constraints**:
 
-- <pre><code>1 <= intervals.Length <= 10<sup>3</sup></code></pre>
-- ` intervals[i].Length = 2`
-- <pre><code>0 <= start time <= end time <= 10<sup>4</sup></code></pre>
+- <code>1 <= intervals.Length <= 10<sup>3</sup></code>
+- `intervals[i].Length = 2`
+- <code>0 <= start time <= end time <= 10<sup>4</sup></code>

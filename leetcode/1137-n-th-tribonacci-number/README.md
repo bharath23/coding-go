@@ -5,18 +5,18 @@ The Tribonacci sequence <code>T<sub>n</sub></code> is defined as follows:
 Given `n`, return the value of <code>T<sub>n</sub></code>.
 
 **Example 1**:
-<pre><code><b>Input</b>: 4
+<pre><b>Input</b>: 4
 <b>Output</b>: 4
 Explanation:
 T<sub>3</sub> = 0 + 1 + 1 = 2
 T<sub>4</sub> = 1 + 1 + 2 = 4
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: 25
+<pre><b>Input</b>: 25
 <b>Output</b>: 1389537
-</code></pre>
+</pre>
 
 **Constraints**
 * `0 <= n <= 37`
-* The answer is guaranteed to fit within a 32-bit integer, i.e. `answer <= 2^31 - 1`.
+* The answer is guaranteed to fit within a 32-bit integer, i.e. <code>answer <= 2<sup>31</sup> - 1</code>.

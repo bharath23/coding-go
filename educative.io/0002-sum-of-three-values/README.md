@@ -9,5 +9,5 @@ integers exist in the array. Otherwise, return FALSE.
 
 **Constraints**:
 * `3 ≤ nums.length ≤ 500`
-* <pre><code>-10<sup>3</sup> ≤ nums[i] ≤ 10<sup<3></code></pre>
-* <pre><code>-10<sup>3</sup> ≤ target ≤ 10<sup<3></code></pre>
+* <code>-10<sup>3</sup> ≤ nums[i] ≤ 10<sup>3</sup></code>
+* <code>-10<sup>3</sup> ≤ target ≤ 10<sup>3</sup></code>

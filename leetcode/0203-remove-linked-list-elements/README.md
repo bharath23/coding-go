@@ -4,19 +4,19 @@ Given the head of a linked list and an integer val, remove all the nodes of the 
 **Example 1**:
 
 ![](example_1.jpg)
-<pre><code><b>Input</b>: head = [1,2,6,3,4,5,6], val = 6
+<pre><b>Input</b>: head = [1,2,6,3,4,5,6], val = 6
 <b>Output</b>: [1,2,3,4,5]
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: head = [], val = 1
+<pre><b>Input</b>: head = [], val = 1
 <b>Output</b>: []
-</code></pre>
+</pre>
 
 **Example 3**:
-<pre><code><b>Input</b>: head = [7,7,7,7], val = 7
+<pre><b>Input</b>: head = [7,7,7,7], val = 7
 <b>Output</b>: []
-</code></pre>
+</pre>
 
 **Constraints**:
 * The number of nodes in the list is in the range  <code>[0, 10<sup>4</sup>]</code>.

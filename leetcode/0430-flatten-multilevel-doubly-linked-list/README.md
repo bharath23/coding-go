@@ -8,28 +8,28 @@ Return  _the_ `head` _of the flattened list. The nodes in the list must have  **
 **Example 1**:
 
 ![](example_1.jpg)
-<pre><code><b>Input</b>: head = [1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]
+<pre><b>Input</b>: head = [1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]
 <b>Output</b>: [1,2,3,7,8,11,12,9,10,4,5,6]
 <b>Explanation</b>: The multilevel linked list in the input is shown.
 After flattening the multilevel linked list it becomes:
-</code>
+
 <img src="example_1_flat.jpg" /></pre>
 
 **Example 2**:
 
 ![](example_2.jpg)
-<pre><code><b>Input</b>: head = [1,2,null,3]
+<pre><b>Input</b>: head = [1,2,null,3]
 <b>Output</b>: [1,3,2]
 <b>Explanation</b>: The multilevel linked list in the input is shown.
 After flattening the multilevel linked list it becomes:
-</code>
+
 <img src="example_2_flat.jpg" /></pre>
 
 **Example 3**:
-<pre><code><b>Input</b>: head = []
+<pre><b>Input</b>: head = []
 <b>Output</b>: []
 <b>Explanation</b>: There could be empty list in the input.
-</code></pre>
+</pre>
 
 **Constraints**:
 * The number of Nodes will not exceed `1000`.
@@ -38,25 +38,25 @@ After flattening the multilevel linked list it becomes:
 **How the multilevel linked list is represented in test cases:**
 We use the multilevel linked list from  **Example 1**  above:
 <pre>
-<code> 1---2---3---4---5---6--NULL
+ 1---2---3---4---5---6--NULL
          |
          7---8---9---10--NULL
              |
              11--12--NULL
-</code></pre>
+</pre>
 
 The serialization of each level is as follows:
-<pre><code>[1,2,3,4,5,6,null]
+<pre>[1,2,3,4,5,6,null]
 [7,8,9,10,null]
 [11,12,null]
-</code></pre>
+</pre>
 To serialize all levels together, we will add nulls in each level to signify no node connects to the upper node of the previous level. The serialization becomes:
-<pre><code>[1,    2,    3, 4, 5, 6, null]
+<pre>[1,    2,    3, 4, 5, 6, null]
              |
 [null, null, 7,    8, 9, 10, null]
                    |
 [            null, 11, 12, null]
-</code></pre>
+</pre>
 Merging the serialization of each level and removing trailing nulls we obtain:
-<pre><code>[1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]
-</code></pre>
+<pre>[1,2,3,4,5,6,null,null,null,7,8,9,10,null,null,11,12]
+</pre>

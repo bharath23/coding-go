@@ -17,23 +17,23 @@ Your code will  **only**  be given the  `head`  of the original linked list.
 **Example 1**:
 
 ![](example_1.png)
-<pre><code><b>Input</b>: head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
+<pre><b>Input</b>: head = [[7,null],[13,0],[11,4],[10,2],[1,0]]
 <b>Output</b>: [[7,null],[13,0],[11,4],[10,2],[1,0]]
-</code></pre>
+</pre>
 
 **Example 2**:
 
 ![](example_2.png)
-<pre><code><b>Input</b>: head = [[1,1],[2,1]]
+<pre><b>Input</b>: head = [[1,1],[2,1]]
 <b>Output</b>: [[1,1],[2,1]]
-</code></pre>
+</pre>
 
 **Example 3**:
 
 ![](example_3.png)
-<pre><code><b>Input</b>: head = [[3,null],[3,0],[3,null]]
+<pre><b>Input</b>: head = [[3,null],[3,0],[3,null]]
 <b>Output</b>: [[3,null],[3,0],[3,null]]
-</code></pre>
+</pre>
 
 **Constraints**:
 * `0 <= n <= 1000`

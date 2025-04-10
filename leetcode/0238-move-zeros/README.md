@@ -4,14 +4,14 @@ Given an integer array  `nums`, move all  `0`'s to the end of it while maintaini
 **Note**  that you must do this in-place without making a copy of the array.
 
 **Example 1**:
-<pre><code><b>Input</b>: num = [0,1,0,3,12]
+<pre><b>Input</b>: num = [0,1,0,3,12]
 <b>Output</b>: [1,3,12,0,0]
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: num = [0]
+<pre><b>Input</b>: num = [0]
 <b>Output</b>: [0]
-</code></pre>
+</pre>
 
 **Constraints:**
 * <code>1 <= nums.length <= 10<sup>4</sup></code>

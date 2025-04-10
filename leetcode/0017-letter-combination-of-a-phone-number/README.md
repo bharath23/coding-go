@@ -6,19 +6,19 @@ A mapping of digit to letters (just like on the telephone buttons) is given belo
 ![telephone button mapping](keypad.svg)
 
 **Example 1**:
-<pre><code><b>Input</b>: digits = "23"
+<pre><b>Input</b>: digits = "23"
 <b>Output</b>: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: digits = ""
+<pre><b>Input</b>: digits = ""
 <b>Output</b>: []
-</code></pre>
+</pre>
 
 **Example 3**:
-<pre><code><b>Input</b>: digits = "2"
+<pre><b>Input</b>: digits = "2"
 <b>Output</b>: ["a", "b", "c"]
-</code></pre>
+</pre>
 
 **Constraints**:
 * `0 <= digits.length <= 4`

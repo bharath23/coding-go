@@ -7,19 +7,19 @@ Given an integer `n`, return a _string array `answer` (1-indexed) where_:
 * `answer[i] == i` (as a string) if none of the above conditions are true.
 
 **Example 1**:
-<pre><code>Input: n = 3
+<pre>Input: n = 3
 Output: ["1","2","Fizz"]
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code>Input: n = 5
+<pre>Input: n = 5
 Output: ["1","2","Fizz","4","Buzz"]
-</code></pre>
+</pre>
 
 **Example 3**:
-<pre><code>Input: n = 15
+<pre>Input: n = 15
 Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
-</code></pre>
+</pre>
 
 **Constraints**:
 * <code>1 <= n <= 10<sup>4</sup></code>

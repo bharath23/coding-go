@@ -7,4 +7,4 @@ given matrix is modified directly without allocating another matrix.
 **Constraints**:
 
 - `1 <= mat.row, mat.col <= 20`
-- <pre><code>-2<sup>31</sup> <= mat[i][j] <= 2<sup>31</sup>-1</code></pre>
+- <code>-2<sup>31</sup> <= mat[i][j] <= 2<sup>31</sup>-1</code>

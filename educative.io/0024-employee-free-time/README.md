@@ -12,4 +12,4 @@ free time for all the employees.
 **Constraints**:
 
 - `1 <= schedule.length, schedule[i].length <= 50`
-- <pre><code>0 <= interval.start < interval.end <= 10<sup>8</sup></code></pre>
+- <code>0 <= interval.start < interval.end <= 10<sup>8</sup></code>

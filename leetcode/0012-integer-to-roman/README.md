@@ -31,31 +31,31 @@ instances where subtraction is used:
 Given an integer, convert it to a roman numeral.
 
 **Example 1**:
-<pre><code><b>Input</b>: num = 3
+<pre><b>Input</b>: num = 3
 <b>Output</b>: "III"
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: num = 4
+<pre><b>Input</b>: num = 4
 <b>Output</b>: "IV"
-</code></pre>
+</pre>
 
 **Example 3**:
-<pre><code><b>Input</b>: num = 9
+<pre><b>Input</b>: num = 9
 <b>Output</b>: "IX"
-</code></pre>
+</pre>
 
 **Example 4**:
-<pre><code><b>Input</b>: num = 58
+<pre><b>Input</b>: num = 58
 <b>Output</b>: "LVIII"
 <b>Explanation</b>: L = 50, V = 5, III = 3.
-</code></pre>
+</pre>
 
 **Example 5**:
-<pre><code><b>Input</b>: num = 1994
+<pre><b>Input</b>: num = 1994
 <b>Output</b>: "MCMXCIV"
 <b>Explanation</b>: M = 1000, CM = 900, XC = 90 and IV = 4.
-</code></pre>
+</pre>
 
 **Constraints**:
 * `1 <= num <= 3999`

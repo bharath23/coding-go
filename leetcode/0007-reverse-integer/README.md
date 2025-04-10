@@ -3,19 +3,19 @@
 Given a 32-bit signed integer, reverse digits of an integer.
 
 **Example 1**:
-<pre><code><b>Input</b>: 123
+<pre><b>Input</b>: 123
 <b>Output</b>: 321
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: -123
+<pre><b>Input</b>: -123
 <b>Output</b>: -321
-</code></pre>
+</pre>
 
 **Example 3**:
-<pre><code><b>Input</b>: 120
+<pre><b>Input</b>: 120
 <b>Output</b>: 21
-</code></pre>
+</pre>
 
 **Note**:  
 Assume we are dealing with an environment which could only store integers

@@ -8,26 +8,26 @@ There is a cycle in a linked list if there is some node in the list that can be 
 **Example 1**:
 
 ![](example_1.png)
-<pre><code><b>Input</b>: head = [3,2,0,-4], pos = 1
+<pre><b>Input</b>: head = [3,2,0,-4], pos = 1
 <b>Output</b>: true
 <b>Explanation</b>: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
-</code></pre>
+</pre>
 
 **Example 2**:
 
 ![](example_2.png)
-<pre><code><b>Input</b>: head = [3,2,0,-4], pos = 1
+<pre><b>Input</b>: head = [3,2,0,-4], pos = 1
 <b>Output</b>: true
 <b>Explanation</b>: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
-</code></pre>
+</pre>
 
 **Example 3**:
 
 ![](example_3.png)
-<pre><code><b>Input</b>: head = [3,2,0,-4], pos = 1
+<pre><b>Input</b>: head = [3,2,0,-4], pos = 1
 <b>Output</b>: true
 <b>Explanation</b>: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
-</code></pre>
+</pre>
 
 **Constraints**:
 * The number of the nodes in the list is in the range  <code>[0, 10<sup>4</sup>]</code>.

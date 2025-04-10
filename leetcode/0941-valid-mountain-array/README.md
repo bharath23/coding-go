@@ -8,19 +8,19 @@ Recall that arr is a mountain array if and only if:
   * `arr[i] > arr[i + 1] > ... > arr[arr.length - 1]`
 
 **Example 1**:
-<pre><code><b>Input</b>: arr = [2,1]
+<pre><b>Input</b>: arr = [2,1]
 <b>Output</b>: false
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: arr = [3,5,5]
+<pre><b>Input</b>: arr = [3,5,5]
 <b>Output</b>: false
-</code></pre>
+</pre>
 
 **Example 3**:
-<pre><code><b>Input</b>: arr = [0,3,2,1]
+<pre><b>Input</b>: arr = [0,3,2,1]
 <b>Output</b>: true
-</code></pre>
+</pre>
 
 **Constraints:**
 * <code>1 <= arr.length <= 10<sup>4</sup></code>

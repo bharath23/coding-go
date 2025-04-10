@@ -10,16 +10,16 @@ You must solve the problem in  `O(1)` extra space complexity and  `O(n)`  time c
 **Example 1**:
 
 ![](example_1.jpg)
-<pre><code><b>Input</b>: head = [1,2,3,4,5]
+<pre><b>Input</b>: head = [1,2,3,4,5]
 <b>Output</b>: [1,3,5,2,4]
-</code></pre>
+</pre>
 
 **Example 2**:
 
 ![](example_2.jpg)
-<pre><code><b>Input</b>: head = [2,1,3,5,6,4,7]
+<pre><b>Input</b>: head = [2,1,3,5,6,4,7]
 <b>Output</b>: [2,3,6,7,1,5,4]
-</code></pre>
+</pre>
 
 **Constraints**:
 * `n ==` number of nodes in the linked list

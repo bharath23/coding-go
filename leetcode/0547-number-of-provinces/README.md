@@ -10,16 +10,16 @@ Return _the total number of **provinces**_.
 **Example 1**:
 
 ![](example_1.jpg)
-<pre><code><b>Input</b>: isConnected = [[1,1,0],[1,1,0],[0,0,1]]
+<pre><b>Input</b>: isConnected = [[1,1,0],[1,1,0],[0,0,1]]
 <b>Output</b>: 2
-</code></pre>
+</pre>
 
 **Example 2**:
 
 ![](example_2.jpg)
-<pre><code><b>Input</b>:  isConnected = [[1,0,0],[0,1,0],[0,0,1]]
+<pre><b>Input</b>:  isConnected = [[1,0,0],[0,1,0],[0,0,1]]
 <b>Output</b>: 3
-</code></pre>
+</pre>
 
 **Constraints**:
 * `1 <= n <= 200`

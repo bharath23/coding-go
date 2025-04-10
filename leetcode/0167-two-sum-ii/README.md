@@ -7,20 +7,20 @@ Return *the indices of the two numbers (**1-indexed**) as an integer array `answ
 The tests are generated such that there is **exactly one solution**. You **may not** use the same element twice.
 
 **Example 1**:
-<pre><code><b>Input</b>: numbers = [2,7,11,15], target = 9
+<pre><b>Input</b>: numbers = [2,7,11,15], target = 9
 <b>Output</b>: [1,2]
 <b>Explanation</b>: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: numbers = [2,3,4], target = 6
+<pre><b>Input</b>: numbers = [2,3,4], target = 6
 <b>Output</b>: [1,3]
-</code></pre>
+</pre>
 
 **Example 3**:
-<pre><code><b>Input</b>: numbers = [-1,0], target = -1
+<pre><b>Input</b>: numbers = [-1,0], target = -1
 <b>Output</b>: [1,2]
-</code></pre>
+</pre>
 
 **Constraints**:
 * <code>2 <= numbers.length <= 3 * 10<sup>4</sup></code>

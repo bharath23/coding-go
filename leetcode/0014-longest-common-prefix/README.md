@@ -4,15 +4,15 @@ Write a function to find the longest common prefix string amongst an array of st
 If there is no common prefix, return an empty string `""`. 
 
 **Example 1**:
-<pre><code><b>Input</b>: strs = ["flower","flow","flight"]
+<pre><b>Input</b>: strs = ["flower","flow","flight"]
 <b>Output</b>: "fl"
-</code></pre>
+</pre>
 
 **Example 2:**
-<pre><code><b>Input</b>: strs = ["dog","racecar","car"]
+<pre><b>Input</b>: strs = ["dog","racecar","car"]
 <b>Output</b>: ""
 <b>Explanation</b>: There is no common prefix among the input strings.
-</code></pre>
+</pre>
 
 **Constraints**:
 

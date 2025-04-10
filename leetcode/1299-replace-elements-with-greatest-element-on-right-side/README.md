@@ -3,7 +3,7 @@ Given an array `arr`, replace every element in that array with the greatest elem
 After doing so, return the array.
 
 **Example 1**:
-<pre><code><b>Input</b>: arr = [17,18,5,4,6,1]
+<pre><b>Input</b>: arr = [17,18,5,4,6,1]
 <b>Output</b>: [18,6,6,6,1,-1]
 <b>Explanation</b>:
 - index 0 --> the greatest element to the right of index 0 is index 1 (18).
@@ -12,13 +12,13 @@ After doing so, return the array.
 - index 3 --> the greatest element to the right of index 3 is index 4 (6).
 - index 4 --> the greatest element to the right of index 4 is index 5 (1).
 - index 5 --> there are no elements to the right of index 5, so we put -1.
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: arr = [400]
+<pre><b>Input</b>: arr = [400]
 <b>Output</b>: [-1]
 <b>Explanation</b>: There are no elements to the right of index 0.
-</code></pre>
+</pre>
 
 **Constraints:**
 * <code>1 <= arr.length <= 10<sup>4</sup></code>

@@ -8,28 +8,28 @@ Return `true` _if there is a cycle in the linked list_. Otherwise, return  `fals
 **Example 1**:
 
 ![](example_1.png)
-<pre><code><b>Input</b>: head = [3,2,0,-4], pos = 1
+<pre><b>Input</b>: head = [3,2,0,-4], pos = 1
 <b>Output</b>: true
 <b>Explanation</b>: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed).
-</code></pre>
+</pre>
 
 **Example 2**:
 
 ![](example_2.png)
-<pre><code><b>Input</b>: head = [1,2], pos = 0
+<pre><b>Input</b>: head = [1,2], pos = 0
 <b>Output</b>: true
 <b>Explanation</b>: There is a cycle in the linked list, where the tail connects to the 0th node.
-</code></pre>
+</pre>
 
 **Example 3**:
 
 ![](example_3.png)
-<pre><code><b>Input</b>: head = [1], pos = -1
+<pre><b>Input</b>: head = [1], pos = -1
 <b>Output</b>: false
 <b>Explanation</b>: There is no cycle in the linked list.
-</code></pre>
+</pre>
 
 **Constraints**:
 * The number of the nodes in the list is in the range  <code>[0, 10<sup>4</sup>]</code>.
-* <code>-10<sup>5</sup>  <= Node.val <= 110<sup>5</sup></code>
-* `pos`  is  `-1`  or a  **valid index**  in the linked-list.
+* <code>-10<sup>5</sup>  <= Node.val <= 10<sup>5</sup></code>
+* `pos` is `-1` or a **valid index** in the linked-list.

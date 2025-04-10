@@ -10,4 +10,4 @@ only once.
 **Constraints**:
 
 - <code>2 <= arr.length <= 10<sup>3</sup></code>
-- <pre><code>2<sup>31</sup> <= arr[i] <= 2<sup>31</sup></code></pre>
+- <code>2<sup>31</sup> <= arr[i] <= 2<sup>31</sup></code>

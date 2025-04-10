@@ -3,15 +3,15 @@
 Given a binary array `nums`, return _the maximum number of consecutive_ `1`_'s in the array if you can flip at most one_  `0`.
 
 **Example 1**:
-<pre><code><b>Input</b>: nums = [1,0,1,1,0]
+<pre><b>Input</b>: nums = [1,0,1,1,0]
 <b>Output</b>: 4
 <b>Explanation</b>: Flip the first zero will get the maximum number of consecutive 1s. After flipping, the maximum number of consecutive 1s is 4.
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: nums = [1,0,1,1,0,1]
+<pre><b>Input</b>: nums = [1,0,1,1,0,1]
 <b>Output</b>: 4
-</code></pre>
+</pre>
 
 **Constraints**:
 * <code>1 <= nums.length <= 10<sup>5</sup></code>

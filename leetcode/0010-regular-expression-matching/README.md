@@ -9,35 +9,35 @@ matching with support for '`.`' and '`*`' where:
 The matching should cover the entire input string (not partial).
 
 **Example 1**:
-<pre><code><b>Input</b>: s = "aa", p = "a"
+<pre><pre><b>Input</b>: s = "aa", p = "a"
 <b>Output</b>: false
 <b>Explanation</b>: "a" does not match the entire string "aa".
-</code></pre>
+</pre></pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: s = "aa", p = "a*"
+<pre><b>Input</b>: s = "aa", p = "a*"
 <b>Output</b>: true
 <b>Explanation</b>: '*' means zero or more of the preceding element, 'a'. Therefore, by repeating
-            'a' once, it becomes "aa". 
-</code></pre>
+             'a' once, it becomes "aa". 
+</pre>
 
 **Example 3**:
-<pre><code><b>Input</b>: s = "ab", p = ".*"
+<pre><b>Input</b>: s = "ab", p = ".*"
 <b>Output</b>: true
 <b>Explanation</b>: ".*" means "zero or more (*) of any character (.)".
-</code></pre>
+</pre>
 
 **Example 4**:
-<pre><code><b>Input</b>: s = "aab", p = "c*a*b"
+<pre><b>Input</b>: s = "aab", p = "c*a*b"
 <b>Output</b>: true
 <b>Explanation</b>: c can be repeated 0 times, a can be repeated 1 time. Therefore, it matches
-            "aab".
-</code></pre>
+             "aab".
+</pre>
 
 **Example 5**:
-<pre><code><b>Input</b>: s = "mississippi", p = "mis*is*p*."
+<pre><b>Input</b>: s = "mississippi", p = "mis*is*p*."
 <b>Output</b>: false
-</code></pre>
+</pre>
 
 **Constraints**:
 * `0 <= s.length <= 20`

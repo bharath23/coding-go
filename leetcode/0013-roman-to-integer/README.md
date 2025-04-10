@@ -31,31 +31,31 @@ instances where subtraction is used:
 Given a roman numeral, convert it to an integer.
 
 **Example 1**:
-<pre><code><b>Input</b>: s = "III"
+<pre><b>Input</b>: s = "III"
 <b>Output</b>: 3
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: s = "IV"
+<pre><b>Input</b>: s = "IV"
 <b>Output</b>: 4
-</code></pre>
+</pre>
 
 **Example 3**:
-<pre><code><b>Input</b>: s = "IX"
+<pre><b>Input</b>: s = "IX"
 <b>Output</b>: 9
-</code></pre>
+</pre>
 
 **Example 4**:
-<pre><code><b>Input</b>: s = "LVIII"
+<pre><b>Input</b>: s = "LVIII"
 <b>Output</b>: 58
 <b>Explanation</b>: L = 50, V = 5, III = 3.
-</code></pre>
+</pre>
 
 **Example 5**:
-<pre><code><b>Input</b>: s = "MCMXCIV"
+<pre><b>Input</b>: s = "MCMXCIV"
 <b>Output</b>: 1994
 <b>Explanation</b>: M = 1000, CM = 900, XC = 90 and IV = 4.
-</code></pre>
+</pre>
 
 **Constraints**:
 * `1 <= s.length <= 15`

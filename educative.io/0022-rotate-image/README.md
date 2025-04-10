@@ -10,4 +10,4 @@ without allocating another matrix.
 
 - `matrix.length = matrix[i].length`
 - `1 <= matrix.length <= 20`
-- <pre><code>-10<sup>3</sup> <= matrix[i][j] <=10<sup>3</sup></code>
+- <code>-10<sup>3</sup> <= matrix[i][j] <=10<sup>3</sup></code>

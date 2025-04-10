@@ -7,4 +7,4 @@ around its root.
 **Constraints**:
 
 - The tree contains nodes in the range `[1, 500]`
-- <pre><code> -10<sup>3</sup> <= Node.data <= 10<sup>3</sup></code></pre>
+- <code> -10<sup>3</sup> <= Node.data <= 10<sup>3</sup></code>

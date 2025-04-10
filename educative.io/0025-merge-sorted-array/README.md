@@ -13,4 +13,4 @@ second array into the first one. You have to modify `nums1` in place.
 - `nums2.length = n`
 - `0 <= m,n <= 200`
 - `1 <= m + n <= 200`
-- <pre><code>-10<sup>3</sup> <= nums[i], nums2[j] <= 10<sup>3</sup></code></pre>
+- <code>-10<sup>3</sup> <= nums[i], nums2[j] <= 10<sup>3</sup></code>

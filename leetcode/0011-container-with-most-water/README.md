@@ -11,28 +11,28 @@ most water.
 **Example 1**:
 
 ![](example_1.jpg)
-<pre><code><b>Input</b>: height = [1,8,6,2,5,4,8,3,7]<b>Output</b>: 49
+<pre><b>Input</b>: height = [1,8,6,2,5,4,8,3,7]<b>Output</b>: 49
 <b>Explanation</b>: The above vertical lines are represented by array [1,8,6,2,5,4,8,3,7].
              In this case, the max area of water (blue section) the container can contain
 	         is 49.
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: height = [1,1]
+<pre><b>Input</b>: height = [1,1]
 <b>Output</b>: 1
-</code></pre>
+</pre>
 
 **Example 3**:
-<pre><code><b>Input</b>: height = [4,3,2,1,4]
+<pre><b>Input</b>: height = [4,3,2,1,4]
 <b>Output</b>: 16
-</code></pre>
+</pre>
 
 **Example 4**:
-<pre><code><b>Input</b>: height = [1,2,1]
+<pre><b>Input</b>: height = [1,2,1]
 <b>Output</b>: 2
-</code></pre> 
+</pre> 
 
 **Constraints**:
 * `n == height.length`
-* `2 <= n <= 105`
-* `0 <= height[i] <= 104`
+* <code>2 <= n <= 10<sup>5</sup></code>
+* <code>0 <= height[i] <= 10<sup>4</sup></code>

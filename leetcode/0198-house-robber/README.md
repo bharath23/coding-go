@@ -8,18 +8,18 @@ the amount of money of each house, return *the maximum amount of money you can
 rob tonight __without alerting the police__*.
 
 **Example 1**:
-<pre><code><b>Input</b>: nums = [1, 2, 3, 1]
+<pre><b>Input</b>: nums = [1, 2, 3, 1]
 <b>Output</b>: 4
 <b>Explanation</b>: Rob house 1 (money = 1) and then rob house 3 (money = 3).
 Total amount you can rob = 1 + 3 = 4.
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input<b>: [2, 7, 9, 3, 1]
+<pre><b>Input<b>: [2, 7, 9, 3, 1]
 <b>Output</b>: 12
 <b>Explanation</b>: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house = 5 (money = 1).
 Total amount you can rob = 2 + 9 + 1 = 12.
-</code></pre>
+</pre>
 
 **Constraints**:
 * `1 <= nums.length <= 100`

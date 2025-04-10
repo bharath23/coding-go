@@ -24,19 +24,19 @@ for (int i = 0; i < actualLength; i++) {
 If all assertions pass, then your solution will be **accepted**.
 
 **Example 1**:
-<pre><code><b>Input</b>: nums = [1,1,2]
+<pre><b>Input</b>: nums = [1,1,2]
 <b>Output</b>:2, nums = [1,2,_]
-<b>Explanation</b>:  Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
+<b>Explanation</b>: Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
 It does not matter what you leave beyond the returned k (hence they are underscores).
-</code></pre>
+</pre>
 
 **Example 2:**
-<pre><code><b>Input</b>: nums = [0,0,1,1,1,2,2,3,3,4]
+<pre><b>Input</b>: nums = [0,0,1,1,1,2,2,3,3,4]
 <b>Output</b>: 5, nums = [0,1,2,3,4,_,_,_,_,_]
-<b>Explanation</b>:  Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4.
+<b>Explanation</b>: Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4.
 Note that the five elements can be returned in any order.
 It does not matter what you leave beyond the returned k (hence they are underscores).
-</code></pre>
+</pre>
 
 **Constraints:**
 * <code>0 <= nums1.length <= 3 * 10<sup>4</sup></code>

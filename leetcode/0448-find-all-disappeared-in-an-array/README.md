@@ -3,14 +3,14 @@
 Given an array `nums` of `n` integers where `nums[i]` is in the range `[1, n]`, return _an array of all the integers in the range_  `[1, n]`  _that do not appear in_  `nums`.
 
 **Example 1**:
-<pre><code><b>Input</b>: nums = [4,3,2,7,8,2,3,1]
+<pre><b>Input</b>: nums = [4,3,2,7,8,2,3,1]
 <b>Output</b>: [5,6]
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: nums = [1,1]
+<pre><b>Input</b>: nums = [1,1]
 <b>Output</b>: [2]
-</code></pre>
+</pre>
 
 **Constraints**:
 * `n == nums.length`

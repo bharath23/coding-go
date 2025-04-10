@@ -6,19 +6,19 @@ Return  _the head of the merged linked list_.
 **Example 1**:
 
 ![](example_1.jpg)
-<pre><code><b>Input</b>: list1 = [1,2,4], list2 = [1,3,4]
+<pre><b>Input</b>: list1 = [1,2,4], list2 = [1,3,4]
 <b>Output</b>: [1,1,2,3,4,4]
-</code></pre>
+</pre>
 
 **Example 2**:
-<pre><code><b>Input</b>: list1 = [], list2 = []
+<pre><b>Input</b>: list1 = [], list2 = []
 <b>Output</b>: []
-</code></pre>
+</pre>
 
 **Example 3**:
-<pre><code><b>Input</b>: list1 = [], list2 = [0]
+<pre><b>Input</b>: list1 = [], list2 = [0]
 <b>Output</b>: [0]
-</code></pre>
+</pre>
 
 **Constraints**:
 * The number of nodes in both lists is in the range `[0, 50]`.
